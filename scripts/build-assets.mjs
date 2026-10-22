@@ -1,0 +1,18 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {fileURLToPath} from 'node:url';
+import {dirname,resolve} from 'node:path';
+import {renderSVG,styles} from '../examples/scenes.mjs';
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
+const out=resolve(root,'skills/muzi-video-style-director/assets');mkdirSync(out,{recursive:true});
+for(const [id] of styles)writeFileSync(resolve(out,`${id}.svg`),renderSVG(id,3));
+const cols=3,rows=Math.ceil(styles.length/cols),w=cols*960,h=rows*540;
+let body='';styles.forEach(([id],i)=>{const raw=renderSVG(id,3).replace('<svg ',`<svg x="${(i%cols)*960}" y="${Math.floor(i/cols)*540}" `);body+=raw;});
+writeFileSync(resolve(out,'style-atlas.svg'),`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">${body}</svg>`);
+const htmlPath=resolve(root,'examples/gallery.html');
+let html=readFileSync(htmlPath,'utf8'),module=readFileSync(resolve(root,'examples/scenes.mjs'),'utf8').replace(/^export /gm,'');
+const begin='/*__SCENES_BEGIN__*/',end='/*__SCENES_END__*/';
+if(html.includes(begin))html=html.slice(0,html.indexOf(begin))+'/*__SCENES__*/'+html.slice(html.indexOf(end)+end.length);
+html=html.replace('/*__SCENES__*/',`${begin}\n${module}\n${end}`);writeFileSync(htmlPath,html);
+writeFileSync(resolve(out,'gallery.html'),html.replace('../README.md','../SKILL.md'));
+writeFileSync(resolve(root,'skills/muzi-video-style-director/LICENSE'),readFileSync(resolve(root,'LICENSE')));
+console.log(`Built ${styles.length} style SVGs, atlas, license and offline galleries.`);
