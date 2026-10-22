@@ -1,0 +1,201 @@
+[
+  {
+    "id": "kinetic",
+    "title": "Dynamic Typography Force 31 Poster",
+    "author": "Begrip",
+    "source_url": "https://dribbble.com/shots/26107754-Dynamic-Typography-Force-31-Poster",
+    "image_url": "https://cdn.dribbble.com/userupload/43575040/file/original-3be8db8bbf87c13395d089e6a8b5fc4b.png?resize=752x&vertical=center",
+    "alt": "黄底红字的动态字体海报",
+    "reason": "大字、拉伸形变与强烈色彩对比，让文字成为主视觉。",
+    "visual_checked": true,
+    "source_verification": "已读取原作者或官方作品页，并实际查看预览。"
+  },
+  {
+    "id": "launch",
+    "title": "A pair of headphones floating in the air",
+    "author": "Kamran Abdullayev",
+    "source_url": "https://unsplash.com/photos/a-pair-of-headphones-floating-in-the-air-TpDhqQCWY0s",
+    "image_url": "https://images.unsplash.com/photo-1737291937135-3a0fcb5e0c44?fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.0.3&q=60&w=3000",
+    "alt": "浅米色背景上的悬浮耳机产品渲染",
+    "reason": "单一产品、克制留白与柔光，强调产品形态和材质。",
+    "visual_checked": true,
+    "source_verification": "已读取原作者或官方作品页，并实际查看预览。"
+  },
+  {
+    "id": "spatial",
+    "title": "Sphere — AI Assistant",
+    "author": "AmazingUI",
+    "source_url": "https://dribbble.com/shots/26539318-Sphere-AI-Assistant",
+    "image_url": "https://cdn.dribbble.com/userupload/44953737/file/still-93334749065a32b98ef1b91d5f9695d3.png",
+    "alt": "黑底紫蓝橙色的透明空间光球",
+    "reason": "曲面条带与透光层次，适合表现抽象空间和结构关系。",
+    "visual_checked": true,
+    "source_verification": "已读取原作者或官方作品页，并实际查看预览。"
+  },
+  {
+    "id": "rhythm",
+    "title": "Blender 3D Motion Graphics",
+    "author": "Mahadie Reza",
+    "source_url": "https://dribbble.com/shots/24623816-Blender-3D-Motion-Graphics",
+    "image_url": "https://cdn.dribbble.com/userupload/15896482/file/still-e9e31cf5ec032c5854d0d3fa737031fd.png?resize=1600x1200",
+    "alt": "粉紫青蓝几何体组成的三维动效画面",
+    "reason": "不同体量的球与几何块组成重复母题，适合安排节奏变化。",
+    "visual_checked": true,
+    "source_verification": "已读取原作者或官方作品页，并实际查看预览。"
+  },
+  {
+    "id": "isometric",
+    "title": "Isometric Neon City",
+    "author": "Fabricio Rosa Marques",
+    "source_url": "https://dribbble.com/shots/3760609-Isometric-Neon-City",
+    "image_url": "https://cdn.dribbble.com/userupload/41923470/file/original-7cc5c99c3b73086787046f5a7fa25e0d.png",
+    "alt": "蓝紫霓虹灯照亮的等距微缩城市",
+    "reason": "统一等距视角和建筑层级，可转化成任务流转的空间布局。",
+    "visual_checked": true,
+    "source_verification": "已读取原作者或官方作品页，并实际查看预览。"
+  },
+  {
+    "id": "pixel",
+    "title": "City Skyline [Pixel Art]",
+    "author": "PixelChickken",
+    "source_url": "https://dribbble.com/shots/13918636-City-Skyline-Pixel-Art",
+    "image_url": "https://cdn.dribbble.com/userupload/28129492/file/original-b538b88b8950424e0f497ba4ad05207e.png?resize=1600x1200",
+    "alt": "星空、满月与高架列车构成的像素城市夜景",
+    "reason": "清楚的像素网格与冷暖灯光，提供比简单方块更丰富的场景层次。",
+    "visual_checked": true,
+    "source_verification": "已读取原作者或官方作品页，并实际查看预览。"
+  },
+  {
+    "id": "paper",
+    "title": "纸张剪贴",
+    "author": "Diana Hlevnjak",
+    "source_url": "https://dribbble.com/shots/4925783-Vibrant-Paper-Cut-Art-Toolkit-Spaceman",
+    "image_url": "https://cdn.dribbble.com/userupload/23355313/file/original-ba918b9cce273bb670c888d84b3a16f6.jpg?resize=1200x900",
+    "alt": "粉紫蓝层叠纸雕构成的宇宙与宇航员",
+    "reason": "纸层纵深、强对比配色和清楚的主角让剪贴风格更有冲击力。",
+    "source_verification": "图片搜索返回原作者作品页；页面正文工具未能读取。",
+    "visual_checked": true
+  },
+  {
+    "id": "ink",
+    "title": "手绘墨线",
+    "author": "Nico Delort",
+    "source_url": "https://www.rootliterary.com/nicolas-delort",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/58dd3787e6f2e1215e39c923/67fd8eb6-6e8e-414d-b201-660314ac94f3/3_Nico%2BDelort%2B-%2BAn%2BInterlude.jpg?format=2500w",
+    "alt": "细密黑白墨线刻画大小悬殊的鲸鱼群与微小潜水者，竖向排列形成震撼尺度感",
+    "reason": "巨鲸与潜水者的尺度对比、细密排线和黑白反差展示手绘画面的叙事张力。",
+    "source_verification": "已读取艺术家代理机构的个人作品页与风格说明。",
+    "visual_checked": true
+  },
+  {
+    "id": "risograph",
+    "title": "复古印刷",
+    "author": "Meneer Heirman",
+    "source_url": "https://dribbble.com/shots/9238225-Dumplin-City-Risograph",
+    "image_url": "https://cdn.dribbble.com/userupload/25704763/file/original-f4e8c7567a3ab99b3d0abd5eff9deae7.jpg?resize=1200x900",
+    "alt": "荧光粉绿黄套色的拟人饺子城市插画",
+    "reason": "有限高饱和套色与印刷颗粒直接体现 Riso 的鲜明质感。",
+    "source_verification": "图片搜索返回原作者作品页；页面正文工具未能读取。",
+    "visual_checked": true
+  },
+  {
+    "id": "monoline",
+    "title": "黑白线稿",
+    "author": "Streamlinehq",
+    "source_url": "https://dribbble.com/shots/21042804-Dhaka-but-make-it-monoline",
+    "image_url": "https://cdn.dribbble.com/userupload/5817811/file/original-08b6e66d0f497b96f923fc3d1d65f321.png?resize=1600x1200",
+    "alt": "统一黑白单线描绘观察、植物、沟通与成长等人物场景",
+    "reason": "稳定线宽、简练轮廓与饱满的构图呈现线稿的完整设计感。",
+    "source_verification": "已读取原作者作品页，确认黑白与线条风格说明。",
+    "visual_checked": true
+  },
+  {
+    "id": "comic",
+    "title": "漫画分镜",
+    "author": "Filipe Andrade（绘画）／Ram V（编剧）",
+    "source_url": "https://www.boom-studios.com/archives/rare-flavours-2-first-look/",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/646996fd7ff181388c2a58c8/1696203189088-QTSC8YP1UVOJTBTT6F3N/Rareflavors_002_interior_001_Promo.jpg",
+    "alt": "蓝色天空、粉色伞与紫色机械构成的五格漫画，以物件特写和人物切换景别",
+    "reason": "强烈光影、有限配色和特写节奏体现漫画分镜的设计完成度。",
+    "source_verification": "已读取出版社官方预览页核实作者；静帧使用 Derby Comics 转载的同名官方宣传图。",
+    "visual_checked": true,
+    "image_provider_url": "https://derbycomics.com/blogs/first-look-rare-flavours-2"
+  },
+  {
+    "id": "collage",
+    "title": "编辑拼贴",
+    "author": "Gabriel Russo",
+    "source_url": "https://www.gabrielrus.so/collages",
+    "image_url": "https://cdn.prod.website-files.com/66990a0685ac3ef09b7b110b/685efcc0fac203bf88a203c8_Gabriel_Russo_Collage_ri06-03-2025.jpg",
+    "alt": "人像侧脸与红色自行车、报纸、绿叶组合成超现实拼贴",
+    "reason": "不同尺度与材质的图像交叠，形成强烈的超现实视觉记忆点。",
+    "source_verification": "已读取艺术家自有作品网站与拼贴作品说明。",
+    "visual_checked": true
+  },
+  {
+    "id": "editorial",
+    "title": "细胞与免疫：编辑式知识解释",
+    "author": "Kurzgesagt",
+    "source_url": "https://shop-eu.kurzgesagt.org/products/immune-infographic-poster",
+    "image_url": "https://shop-eu.kurzgesagt.org/cdn/shop/products/01_ImmuneInfo_Front.jpg?v=1633941430",
+    "alt": "黄色知识海报用细胞图标、短说明和彩色箭头解释免疫系统关系。",
+    "reason": "把复杂概念拆成图标、说明与因果连线，配色统一且信息层级明确。",
+    "visual_checked": true,
+    "source_verification": "已核对原作者或官方作品页，并实际查看图片。"
+  },
+  {
+    "id": "data",
+    "title": "电影票房：环形数据叙事",
+    "author": "James Round",
+    "source_url": "https://www.jamesrounddesign.com/the-billion-dollar-film-club",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/52ff7466e4b0ee230b3475c4/1551266940399-XZB4MNQW3RANJRYCXTMM/The%2Bmany%2Bmoons%2Bof%2BJupiter5.jpg",
+    "alt": "紫底票房信息图，以粉色放射条、青色节点和黄色标记组织电影数据。",
+    "reason": "环形统计图加关系连线，多层数据编码兼顾视觉冲击与可读结构。",
+    "visual_checked": true,
+    "source_verification": "已核对原作者或官方作品页，并实际查看图片。"
+  },
+  {
+    "id": "terminal",
+    "title": "终端代码：字符仪表盘",
+    "author": "Rosé Pine / MrSandman",
+    "source_url": "https://github.com/rose-pine/btop",
+    "image_url": "https://user-images.githubusercontent.com/121260905/243478977-4542e8d3-1b7c-4d72-bdb0-b6dfdc4ebbb2.png",
+    "alt": "深紫色终端监控界面，以等宽字符、彩色小图表和细线分栏展示系统状态。",
+    "reason": "终端字符组成图表和仪表盘，适合把自动化过程做成清楚的实时状态演示。",
+    "visual_checked": true,
+    "source_verification": "已核对原作者或官方作品页，并实际查看图片。"
+  },
+  {
+    "id": "blueprint",
+    "title": "汽车工程蓝图：多视角与尺寸",
+    "author": "BeamNG",
+    "source_url": "https://shop.beamng.com/en-usd/products/civetta-scintilla-blueprint-poster",
+    "image_url": "https://imgproxy.fourthwall.dev/KqDb1D5OYsac2Hrf8WXlHZFMWI8ZcnqpDUvuDbsdqU8/w%3A1200/sm%3A1/enc/CiHhfz7Iwf_r30oo/qgvdgDVUkHAYZfiE/Ew4mzs12-R-tmroL/g9vmSE4eDIrBBxgs/3X8Yqej0j0PBoUsa/j78qnBM7YVJMndCY/efGGitaZBBm-yXPt/1wOPg1OAMgeJBUAU/cXdmrI9LIF2scMeX/TO_aG0zs6041rzSK/JBAA0v1oBVycER5q/-DH-Q8HAG6Mn6Oww/EW7cMrYFK9zh2e0P/Mxx68yGz-QhyCFZ8/qfAinoBWQJ0.png",
+    "alt": "蓝色网格底上的白线汽车工程图，包含侧视、俯视和正视图及尺寸标注。",
+    "reason": "标准投影、尺寸箭头和细线轮廓让工程结构本身成为主视觉。",
+    "visual_checked": true,
+    "source_verification": "已核对原作者或官方作品页，并实际查看图片。"
+  },
+  {
+    "id": "timeline",
+    "title": "人类历史：插画时间线",
+    "author": "Kurzgesagt",
+    "source_url": "https://shop-eu.kurzgesagt.org/products/timeline-of-human-history-poster",
+    "image_url": "https://shop-eu.kurzgesagt.org/cdn/shop/files/01_EE_Humanity_Timeline_Poster_Front_04e8b0f1-c21c-4b09-8439-2b694ce9de8e.jpg?v=1749644314&width=2048",
+    "alt": "深色历史海报用连续蓝色曲线串起各时期的彩色地标与发明插画。",
+    "reason": "时间轴成为贯穿场景的道路，适合通过镜头推进讲述事件演进。",
+    "visual_checked": true,
+    "source_verification": "已核对原作者或官方作品页，并实际查看图片。"
+  },
+  {
+    "id": "map",
+    "title": "上海城市地图：地标与路线",
+    "author": "Iris Yuan",
+    "source_url": "https://dribbble.com/shots/2933163-Shanghai-city-map",
+    "image_url": "https://cdn.dribbble.com/userupload/21285599/file/original-76a11c77757cefb5828525951e30dd86.png",
+    "alt": "绿色上海旅行插画地图，白色路线连接粉色节点与立体地标。",
+    "reason": "路线、地标、城市水系各有明确层级，适合沿路径逐站展开信息。",
+    "visual_checked": true,
+    "source_verification": "已核对原作者或官方作品页，并实际查看图片。"
+  }
+]

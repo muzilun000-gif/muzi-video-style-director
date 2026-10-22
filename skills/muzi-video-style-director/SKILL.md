@@ -49,8 +49,8 @@ description: 为代码驱动的短视频、产品宣传片、知识解释片选�
 | collage | 编辑拼贴 | 多材料对比、文化、视觉海报 |
 
 不要把十八种风格混进同一条短片。默认一个主风格；需要跨章节对比时保留共用字体、边距与转场逻辑。
-配图见 `assets/style-atlas.svg`，是本包原创风格示意，不是模型生成结果或第三方作品截图。
-离线动效预览见 `assets/gallery.html`，可直接打开。完整仓库也在 `examples/gallery.html` 保留同一演示。
+展示图见 [十八种风格作品参考](references/visual-inspiration.md)，一张对应一种风格；`assets/gallery.html` 是同一组图的卡片画廊，图片需联网加载。查看原作者图只用于确定视觉方向，不当作本 skill 已实现的效果。
+基础代码动作演示单独保留在 `assets/basic-demo.html`，旧 SVG 位于 `assets/basic-studies/`。
 
 ## 写分镜和风格合同
 
@@ -62,7 +62,7 @@ description: 为代码驱动的短视频、产品宣传片、知识解释片选�
 ## 选择执行路线
 
 1. 现有项目已经用 Remotion / HyperFrames / Canvas：沿用并核对实际安装版本，不另起一套。
-2. 纯文字、图形、轻量图表：优先 Canvas 或 SVG；本技能的 `assets/gallery.html` 可离线演示十八种风格，以 `renderAt(t)` 驱动。
+2. 纯文字、图形、轻量图表：优先 Canvas 或 SVG；本技能的 `assets/basic-demo.html` 可离线演示十八种基础动作，以 `renderAt(t)` 驱动。
 3. 多镜头旁白/字幕/素材混剪：可选 Remotion；HTML/GSAP 场景可选 HyperFrames。引擎依赖和安装成本独立于 skill，先检查环境再给命令。
 4. 水彩角色或复杂 3D：先做一个短镜头测速。逐帧渲染可能很慢，不保证低配机器即时完成。
 
