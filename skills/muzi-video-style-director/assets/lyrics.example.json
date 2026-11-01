@@ -1,0 +1,114 @@
+{
+  "source": {
+    "audio": "无（原创示例，不对应任何歌曲）",
+    "lyrics": "原创测试文案",
+    "timing": "uniform"
+  },
+  "status": "待校对",
+  "cues": [
+    {
+      "id": "demo-01",
+      "start": 0,
+      "end": 7.8,
+      "text": "风从窗边经过我把话留在心里",
+      "lines": [
+        {
+          "x": 0.22,
+          "y": 0.68,
+          "size": 76,
+          "spacing": 6,
+          "align": "left",
+          "glyphs": [
+            {
+              "char": "风",
+              "start": 0.25,
+              "end": 0.67,
+              "emphasis": false
+            },
+            {
+              "char": "从",
+              "start": 0.67,
+              "end": 1.09,
+              "emphasis": false
+            },
+            {
+              "char": "窗",
+              "start": 1.09,
+              "end": 1.51,
+              "emphasis": false
+            },
+            {
+              "char": "边",
+              "start": 1.51,
+              "end": 1.93,
+              "emphasis": false
+            },
+            {
+              "char": "经",
+              "start": 1.93,
+              "end": 2.35,
+              "emphasis": true
+            },
+            {
+              "char": "过",
+              "start": 2.35,
+              "end": 2.77,
+              "emphasis": false
+            }
+          ]
+        },
+        {
+          "x": 0.38,
+          "y": 0.8,
+          "size": 76,
+          "spacing": 6,
+          "align": "left",
+          "glyphs": [
+            {
+              "char": "我",
+              "start": 3,
+              "end": 3.42,
+              "emphasis": false
+            },
+            {
+              "char": "把",
+              "start": 3.42,
+              "end": 3.84,
+              "emphasis": false
+            },
+            {
+              "char": "话",
+              "start": 3.84,
+              "end": 4.26,
+              "emphasis": false
+            },
+            {
+              "char": "留",
+              "start": 4.26,
+              "end": 4.68,
+              "emphasis": false
+            },
+            {
+              "char": "在",
+              "start": 4.68,
+              "end": 5.1,
+              "emphasis": false
+            },
+            {
+              "char": "心",
+              "start": 5.1,
+              "end": 5.52,
+              "emphasis": true
+            },
+            {
+              "char": "里",
+              "start": 5.52,
+              "end": 5.94,
+              "emphasis": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

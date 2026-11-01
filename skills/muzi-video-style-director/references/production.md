@@ -3,7 +3,7 @@
 ## BRIEF.md
 ```text
 主题 / 观众 / 看完获得什么：
-核心判断（用户原话优先）：
+核心判断（用户原话优先，详见 CONTENT.md）：
 事实来源及核实日期：
 时长 / fps / 画幅 / 平台：
 素材、字体、声音的来源与许可：
@@ -30,13 +30,22 @@
 ```
 
 ## 技术验收
-- 关键帧：首帧、最密帧、转场两侧、结尾。用实际渲染图检查，不能仅阅读代码。
+- 关键帧：首帧、最密帧、转场两侧、结尾。用实际渲染图检查，不能仅阅读代码。成片后用 `scripts/contact_sheet.sh` 每个镜头取一张看全片。
+- 文字与数据：解码/打字动画结束时文字完整；数字不被差距块、图形遮挡；示意图和自编示例在画面上有标注。
 - 手机可读性：缩到约 360px 宽，检查中文换行、缺字、来源与字幕。
 - 确定性：相同 t 两次渲染一致；字体/素材已就绪。
 - 数据：逐个比对来源，示例数据明确标注，UI 示意与真实截图分开。
 - MP4：文件存在且非空；用 ffprobe 核实流、时长、画幅、fps；完整解码检查。
 
-有 ffmpeg/ffprobe 时可用以下命令，替换实际路径；没有这些工具就明确未验：
+优先运行本技能自带的脚本（路径相对技能目录），没有 ffmpeg/ffprobe 时脚本会报“未验证”，照实报告：
+```bash
+scripts/check_video.sh out/video.mp4 1080x1920 30
+scripts/extract_frames.sh out/video.mp4 out/frames 0 7.5 14.9
+node scripts/validate_lyrics.mjs lyrics.json --audio-duration 245.3
+scripts/contact_sheet.sh out/video.mp4 out/sheet.png 6
+scripts/audio_peak.sh out/video.mp4
+```
+手动命令：
 ```bash
 ffprobe -v error -show_entries format=duration:stream=codec_type,width,height,r_frame_rate -of json out/video.mp4
 ffmpeg -v error -i out/video.mp4 -f null -
@@ -51,4 +60,6 @@ ffmpeg -v error -i out/video.mp4 -f null -
 
 ## 冒烟使用请求
 “用这个 skill 做 15 秒、9:16 的解释片：AI 会写代码，为什么还要 skill？采用 kinetic，先交三张关键帧和源文件，不调用付费 API。”
-预期：选择 kinetic；分镜包含一个具体例子；无虚构指标；交付状态精确。没有 MP4 时不能说成片已完成。
+预期：先给出 `CONTENT.md` 草案（核心信息、钩子、具体例子、结尾落点、2–3 个角度）并请用户确认；确认后选择 kinetic，分镜包含那个具体例子；无虚构指标；交付状态精确。没有 MP4 时不能说成片已完成。
+
+“直接做，不用讨论”时的预期：不停下来提问，自己写好 `CONTENT.md` 并在报告中列出假设。

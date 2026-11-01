@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><title>彩色错行歌词 · 原创示例</title>
+<style>body{margin:0;background:#1d2745;color:#fff3d8;font:16px system-ui}canvas{display:block;width:min(100vw,1280px);height:auto;margin:auto}p,section{max-width:1200px;margin:12px auto;padding:0 20px}input{width:70%}button{padding:8px 20px}</style>
+<canvas id="stage" width="1920" height="1080"></canvas>
+<p>原创排版测试文字，不是任何歌曲的歌词；示例时间轴不对应任何歌曲。这里只验证文字层，不代表完整MV效果。</p>
+<section><button id="play">播放文字演示</button> <input id="seek" type="range" min="0" max="8" step="0.01" value="2.4"> <output id="time"></output></section>
+<script type="module">
+import {drawLyrics} from './lyric-canvas.mjs';
+const canvas=document.querySelector('canvas'),ctx=canvas.getContext('2d');
+const seek=document.querySelector('#seek'),time=document.querySelector('#time');
+const make=(text,start)=>Array.from(text).map((char,i)=>({char,start:start+i*.42,end:start+(i+1)*.42,emphasis:i===text.length-2}));
+const cue={start:0,end:7.8,lines:[
+ {x:.22,y:.68,size:76,spacing:6,glyphs:make('风从窗边经过',.25)},
+ {x:.38,y:.80,size:76,spacing:6,glyphs:make('我把话留在心里',3.0)}
+]};
+window.draw=async function(t){
+ await document.fonts.ready;
+ ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,1920,1080);
+ const g=ctx.createLinearGradient(0,0,1920,1080);g.addColorStop(0,'#293761');g.addColorStop(1,'#685582');ctx.fillStyle=g;ctx.fillRect(0,0,1920,1080);
+ // Deliberately abstract test background; this is not a claimed character animation.
+ ctx.fillStyle='#8FB8D9';ctx.fillRect(125,150,390,390);
+ ctx.fillStyle='#F4D583';ctx.fillRect(155,180,330,330);
+ ctx.fillStyle='#293761';ctx.fillRect(310,180,16,330);ctx.fillRect(155,338,330,16);
+ ctx.fillStyle='#AE82A9';ctx.beginPath();ctx.arc(1520,260,130,0,Math.PI*2);ctx.fill();
+ ctx.fillStyle='#FFF3D8';ctx.font='32px system-ui';ctx.fillText('文字层示意 · 原创测试文案',125,95);
+ const boxes=drawLyrics(ctx,cue,t);
+ window.lastFrame={t,visibleGlyphs:boxes.filter(b=>b.alpha>0).length};
+ time.textContent=t.toFixed(2)+' s';seek.value=t;return window.lastFrame;
+};
+seek.oninput=()=>window.draw(Number(seek.value));
+let playing=false,origin=0;
+document.querySelector('#play').onclick=()=>{playing=!playing;origin=performance.now()-Number(seek.value)*1000;if(playing)requestAnimationFrame(tick)};
+function tick(now){if(!playing)return;const t=(now-origin)/1000;if(t>=8){playing=false;window.draw(7.79);return}window.draw(t);requestAnimationFrame(tick)}
+window.draw(Number(new URLSearchParams(location.search).get('t')??2.4));
+</script></html>
